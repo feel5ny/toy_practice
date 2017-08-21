@@ -1,0 +1,40 @@
+h1{
+  margin-bottom: 100px;
+}
+.sec1{
+  /* text-align: center */
+  margin-bottom: 20px;
+}
+.bg {
+  background-image: ;
+  border: 10px solid #FFE750;
+  height: 100%;
+}
+.wrapper{
+  /* margin-top : 100px; */
+  width:500px;
+  position:absolute;
+  top: 50%; 
+  left: 50%;
+  transform:translate(-50%,-50%);  
+}
+
+button{
+  display: inline-block;
+}
+
+.ui{
+  display: block;
+}
+
+.fields{
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* footer {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom:10px;
+} */
