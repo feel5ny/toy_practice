@@ -1,4 +1,6 @@
 /*
+0. 제이커리로 바꾸기
+
 1. 체킹을 하면, 카운트된다. 
 1-1. checkbox.checked === true 이면 count++
 2. count 카운트된 숫자를 alert에 띄운다.  
