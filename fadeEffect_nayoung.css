@@ -2,9 +2,12 @@ h1{
   margin-bottom: 100px;
 }
 
+.grid{
+  height: 100px;
+}
 .bg {
   background-image: ;
-  /* border: 10px solid #FFE750; */
+  border: 10px solid #FFE750;
   height: 100%;
 }
 
@@ -12,11 +15,10 @@ h1{
   /* margin-top : 100px; */
   width:700px;
   position:absolute;
-  top: 50%; 
+  top: 30px; 
   left: 50%;
-  transform:translate(-50%,-50%);  
+  transform:translateX(-50%);  
 }
-
 
 .fields{
   margin-bottom: 5px;
@@ -30,18 +32,35 @@ img{
   /* overflow: hidden; */
 }
 
-.fadeInCss{
-  animation-name: fadeIn, fadeOut;
-  animation-duration: 1s;
+#fadeCss{
   opacity: 0;
+  transition: opacity 1s;
+}
+/* 
+#fadeCss:hover{
+  opacity: 1;
+} */
+
+/* #fadeCss {
+  opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+}
+#fadeCss.fade-out
+{
+    opacity:0;
+}
+#fadeCss.fade-in
+{
+    opacity:1;
+} */
+
+#fadeJS{
+  opacity: 0.5;
 }
 
-@keyframes fadeIn {
-  from{opacity: 0;}
-  to{opacity: 1;}
-}
-
-@keyframes fadeOut {
-  from{opacity: 1;}
-  to{opacity: 0;}
+.FadeJquery{
+  /* opacity: 0; */
+  display: none;
 }

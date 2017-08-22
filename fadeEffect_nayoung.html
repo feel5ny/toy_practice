@@ -7,35 +7,30 @@
   <link rel="stylesheet" type="text/css" href="fadeEffect_nayoung.css">
   <title>Fade Effect</title>
   <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
+  
   <div class="bg">
     <div class="wrapper">
-      <h1 class="ui header">Fade Effect
-      <div class="sub header">Vanila JS / jQuery / CSS / 김나영</div>
-      </h1><div class="ui divider"></div>
-      <h3>fade-in, fade-out effect with css</h3>
-      <div class="ui grid">
-        <div class="eight wide column">
-          <img src="asset/minions.jpg" alt="" class ="fadeCss">
-          
-        </div>
-        <div class="eight wide column">
-          <button class="ui teal button fields fluid" id="fadeInBtn_css">Fade-In</button>
-          <button class="ui teal basic button fields fluid" id="fadeOutBtn_css">Fade-Out</button>
-          
-        </div>
-        
+      <div class="ui secondary pointing menu">
+        <a class="item" href="DOM_nayoung.html">1_checkbox</a>
+        <a class="item" href="IMG_Carousel_nayoung.html">2_carousel</a>
+        <a class="active item" href="fadeEffect_nayoung.html">3_fade</a>
       </div>
-      
-      <h3>fade-in, fade-out effect with JS</h3>
+      <h1 class="ui header">Fade Effect
+      <div class="sub header">Vanila JS / jQuery / CSS / 김나영 / 20170822</div>
+      </h1><div class="ui divider"></div>
+      <h3>fade-in, fade-out effect with CSS & JS</h3>
       <div class="ui grid">
         <div class="eight wide column">
-          <img src="asset/minions_purple.jpg" alt="" class ="Fade js">
+          <img src="asset/minions.jpg" alt="" id ="fadeCss">
+          
         </div>
         <div class="eight wide column">
-          <button class="ui purple button fields fluid" id="fadeInBtn_js">Fade-In</button>
-          <button class="ui purple basic button fields fluid" id="fadeOutBtn_js">Fade-Out</button>
+          <button class="ui teal button fields fluid" id="fadeInBtn_css" >Fade-In</button>
+          <button class="ui teal basic button fields fluid" id="fadeOutBtn_css" >Fade-Out</button>
+          
         </div>
         
       </div>
@@ -43,7 +38,19 @@
       <h3>fade-in, fade-out effect with jQuery</h3>
       <div class="ui grid">
         <div class="eight wide column">
-          <img src="asset/minions_gru.jpg" alt="" class ="Fade jquery">
+          <img src="asset/minions_purple.jpg" alt="" class ="FadeJquery">
+        </div>
+        <div class="eight wide column">
+          <button class="ui purple button fields fluid" id="fadeInBtn_jquery">Fade-In</button>
+          <button class="ui purple basic button fields fluid" id="fadeOutBtn_jquery">Fade-Out</button>
+        </div>
+        
+      </div>
+      
+      <!-- <h3>fade-in, fade-out effect with JS</h3>
+      <div class="ui grid">
+        <div class="eight wide column">
+          <img src="asset/minions_gru.jpg" alt="" id="fadeJS">
           
         </div>
         <div class="eight wide column">
@@ -52,9 +59,17 @@
           
         </div>
         
-      </div>
+      </div> -->
     </div>
   </div>
+  <script>
+    $('#fadeInBtn_jquery').click(function () {
+      $('.FadeJquery').fadeIn(1000);
+    });
+    $('#fadeOutBtn_jquery').click(function () {
+      $('.FadeJquery').fadeOut(1000);
+    });
+  </script>
   <script src = "fadeEffect_nayoung.js"></script>
 </body>
 </html>
