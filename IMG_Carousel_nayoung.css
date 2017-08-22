@@ -14,31 +14,34 @@ i{
 
 img {
   display: inline-block;
-  width: 28%;
+  width: 33%;
+  margin-left: 5px;
 }
-
+.carousel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #imgLeftBtn{
-  margin-top:-20%;
   margin-right:10px;
 }
 
 #imgRightBtn{
-  margin-top:-20%;
   margin-left:10px;
 }
 
 .bg {
   background-image: ;
-  /* border: 10px solid #FFE750; */
+  border: 10px solid #FFE750;
   height: 100%;
 }
 .wrapper{
   /* margin-top : 100px; */
   width:700px;
   position:absolute;
-  top: 50%; 
+  top: 30px; 
   left: 50%;
-  transform:translate(-50%,-50%);  
+  transform:translateX(-50%);  
 }
 
 button{
@@ -54,9 +57,15 @@ button{
   display: block;
 }
 
-/* footer {
-  position: absolute;
-  left:50%;
-  transform: translateX(-50%);
-  bottom:10px;
-} */
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#buttons{
+  display: flex;
+  justify-content: center;
+
+}

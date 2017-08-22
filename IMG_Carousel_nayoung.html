@@ -11,24 +11,36 @@
 <body>
   <div class="bg">
     <div class="wrapper">
+      <div class="ui secondary pointing menu">
+        <a class="item" href="DOM_nayoung.html">1_checkbox</a>
+        <a class="active item" href="IMG_Carousel_nayoung.html">2_carousel</a>
+        <a class="item" href="fadeEffect_nayoung.html">3_fade</a>
+      </div>
       <h1 class="ui header">IMG carosel Practice
-      <div class="sub header">Vanila JS / SemanticUI / ES6 / 김나영</div>
+      <div class="sub header">Vanila JS / SemanticUI / ES6 / 김나영 / 20170822</div>
       </h1><div class="ui divider"></div>
-      <h3>1. 버튼을 클릭하면 이미지를 좌측으로 슬라이드</h3>
-      <h3>2. 3초마다 이미지를 좌측으로 슬라이드</h3>
-      <div class="carousel">
-        <i class="purple huge angle left icon" id="imgLeftBtn"></i>
-        <img id="img-1" src="asset/Carousel_1.jpg" alt="">
-        <img id="img-2" src="asset/Carousel_2.jpg" alt="">
-        <img id="img-3" src="asset/Carousel_3.jpg" alt="">
-        <i class="purple huge angle right icon" id="imgRightBtn"></i>
-        
+      <div class="ui grid">
+        <div class="eight wide column">
+          <h3>1. 버튼을 클릭하면 이미지를 좌측으로 슬라이드</h3>
+          <h3>2. 3초마다 이미지를 좌측으로 슬라이드</h3>
+          <h3>3. 3초마다 슬라이딩 정지버튼</h3>
+        </div>
+        <div class="eight wide column" id="buttons">
+          <div class="play">
+            <i class="purple huge play icon" id="autoSlideIcon"></i> 
+            <i class="purple huge pause icon" id="stopIcon"></i>
+          </div>
+        </div>
+          <div class="carousel">
+            <i class="purple huge angle left icon" id="imgLeftBtn"></i>
+            <img id="img-1" src="asset/Carousel_1.jpg" alt="">
+            <img id="img-2" src="asset/Carousel_2.jpg" alt="">
+            <img id="img-3" src="asset/Carousel_3.jpg" alt="">
+            <i class="purple huge angle right icon" id="imgRightBtn"></i>
+            
+        </div>  
       </div>
       <!-- 토글로만들기 -->
-      <i class="orange play icon" id="autoSlideIcon"></i> 
-      <i class="orange pause icon" id="stopIcon"></i>
-      <!-- <button class="ui purple basic button fields" id="imgLeftBtn">Left</button>
-      <button class="ui purple basic button fields" id="imgRightBtn">Right</button> -->
     </div>
   </div>
   <script src = "IMG_Carousel_nayoung.js"></script>
