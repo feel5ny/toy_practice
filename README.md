@@ -18,9 +18,10 @@ todo
 - Carousel 애니메이션 추가하기
 
 <hr>
+
 1. 체크박스 연습
 <img src="/DOM.gif">
 
-> Vanila JS
+
 todo
 - alert확인 후에 checked가 안된 약관 box에 표시하기(comment나 borderline으로)
