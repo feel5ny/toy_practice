@@ -6,13 +6,25 @@ h1{
   margin-bottom: 20px;
 }
 
-img {
+i{
+  cursor: pointer;
   display: inline-block;
-  width: 30%;
+  margin:0;
 }
 
-.carousel{
-  overflow: hidden;
+img {
+  display: inline-block;
+  width: 28%;
+}
+
+#imgLeftBtn{
+  margin-top:-20%;
+  margin-right:10px;
+}
+
+#imgRightBtn{
+  margin-top:-20%;
+  margin-left:10px;
 }
 
 .bg {

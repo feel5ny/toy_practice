@@ -17,12 +17,18 @@
       <h3>1. 버튼을 클릭하면 이미지를 좌측으로 슬라이드</h3>
       <h3>2. 3초마다 이미지를 좌측으로 슬라이드</h3>
       <div class="carousel">
-        <img id="img-1" src="http://placehold.it/350x250/abc?text=img1" alt="">
-        <img id="img-2" src="http://placehold.it/350x250/bca?text=img2" alt="">
-        <img id="img-3" src="http://placehold.it/350x250/cba?text=img3" alt="">
-
+        <i class="purple huge angle left icon" id="imgLeftBtn"></i>
+        <img id="img-1" src="asset/Carousel_1.jpg" alt="">
+        <img id="img-2" src="asset/Carousel_2.jpg" alt="">
+        <img id="img-3" src="asset/Carousel_3.jpg" alt="">
+        <i class="purple huge angle right icon" id="imgRightBtn"></i>
+        
       </div>
-      <button class="ui purple basic button fields" id="imgBtn">slide image</button>
+      <!-- 토글로만들기 -->
+      <i class="orange play icon" id="autoSlideIcon"></i> 
+      <i class="orange pause icon" id="stopIcon"></i>
+      <!-- <button class="ui purple basic button fields" id="imgLeftBtn">Left</button>
+      <button class="ui purple basic button fields" id="imgRightBtn">Right</button> -->
     </div>
   </div>
   <script src = "IMG_Carousel_nayoung.js"></script>

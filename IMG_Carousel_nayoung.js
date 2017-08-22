@@ -25,18 +25,8 @@ function carouselSlideRight(){
 };
 
 // const timeoutID;
-function autoSlide() {
-  const timeout = window.setTimeout(carouselSlideLeft,3000);
-  // const id = timeout;
-  setTimeout(function(){
-    autoSlide();
-  }, 3000);
-  // stopImgSlide(timeoutID);
-}
-
-// function stopImgSlide(timeout) {
-//   clearTimeout(timeout);
-// }
+let timeout;
+// const stoptime = clearInterval(timeout);
 
 const img1= document.getElementById('img-1');
 const img2 = document.getElementById('img-2');
@@ -56,6 +46,6 @@ const stopSlide = document.querySelector('#stopIcon');
 
 imgLeftSlide.addEventListener('click', carouselSlideLeft);
 imgRightSlide.addEventListener('click', carouselSlideRight);
-imgAutoSlide.addEventListener('click', autoSlide);
-stopSlide.addEventListener('click', stopImgSlide);
+imgAutoSlide.addEventListener('click', function(){timeout = setInterval(carouselSlideLeft,3000)});
+stopSlide.addEventListener('click', function(){clearInterval(timeout)});
 
