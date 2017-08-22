@@ -7250,8 +7250,8 @@ a.ui.inverted.grey.header:hover {
 i.icon {
   display: inline-block;
   opacity: 1;
-  margin: 0em 0.25rem 0em 0em;
-  width: 1.18em;
+  /* margin: 0em 0.25rem 0em 0em; */
+  /* width: 1.18em; */
   height: 1em;
   font-family: 'Icons';
   font-style: normal;
