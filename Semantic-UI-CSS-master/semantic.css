@@ -18667,8 +18667,8 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.grid > * {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
 }
 
 /*-------------------
@@ -23696,7 +23696,7 @@ Floated Menu / Item
 }
 
 .ui.table:first-child {
-  margin-top: 0em;
+  /* margin-top: 0em; */
 }
 
 .ui.table:last-child {
